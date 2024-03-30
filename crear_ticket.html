@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home</title>
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+
+    <body>
+
+        <div>
+            <nav class="superior">
+
+                <a href="ticket.html"> <img class="logito" src="img/logo.png"> </a>
+
+                 
+                <ul class="crear">
+                    <li> <a href="#"> <img src="img/crear.png"> </a>
+                        <ul>
+                            <li> <a href="crear_ticket.html"> ticket </a> </li>
+                            <li> <a href="#"> factura</a> </li>
+                            <li> <a href="#"> cotizacion </a> </li>
+                            <li> <a href="crear_cliente.html"> cliente </a> </li>
+                    </li>
+                    </ul>
+                    </ul>
+
+            </nav>
+            <div>
+                <nav class="navmenu">
+                    <ul>
+
+                        <li> <a href="ticket.html"> <img class="navegacion" src="img/inicio.png" title="inicio"> </li> </a>
+                        <li> <a href="ticket.html"> <img class="navegacion" src="img/ticket.png" title="ticket"> </li>
+                        </a>
+                        <li> <a href="#"> <img class="navegacion" src="img/cliente.png" title="Cliente"> </li> </a>
+                        <li> <a href="#"> <img class="navegacion" src="img/proveedor.png" title="proveedor"> </li> </a>
+                        <li> <a href="#"> <img class="navegacion" src="img/cotizacion.png" title="cotizacion"> </li> </a>
+                        
+                        <li> <a href="#"> <img class="navegacion" src="img/factura.png" title="factura"> </li> </a>
+                        <li> <a href="index.html"> <img class="navegacion" src="img/salir.png" title="salir"> </li> </a>
+
+
+                    </ul>
+                </nav>
+                < </div>
+                    <div>
+
+                        <nav class="funciones">
+                            <button type="button" onclick="redireccioncrear()"> Crear </button>
+                            <button type="button" onclick="redireccioneditar()"> Editar </button>
+                            <button type="button" onclick="redireccionborrar()"> Borrar </button>
+                            <input class="buscar" type="buscar" placeholder="Buscar"> <button type="button"
+                        onclick="redireccion()"> buscar </button>
+                        </nav>
+
+                    </div>
+
+                    <div class="container">
+                        <form action="/action_page.php">
+
+                            <div class="row">
+                                <div class="col-25">
+                                  <label for="asiganado">Asignado a:</label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="asignado" name="asiganado">
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="estado">Estado:</label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="estado" name="estado">
+                                        <option value="abierto">Abierto</option>
+                                        <option value="enprogreso">En Progreso</option>
+                                        <option value="cerrado">Cerrado</option>
+                                    </select>
+                                </div>
+                   
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Cliente:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="cliente" name="cliente" placeholder="nombre del clientre">
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="descripcion">Descripcion:</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="descripcion" name="descripcion" placeholder="descripcion"
+                                style="height:80px"> </textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="descripcion">Solucion:</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="solucion" name="solucion" placeholder="solucion"
+                                    style="height:80px"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="clienteboton">
+                            <input type="submit" value="guardar">
+                        </div>
+                        </form>
+                    </div>
+
+                    <script src="js/funcionestiket.js"> </script>
+
+    </body>
+
+    </html>
